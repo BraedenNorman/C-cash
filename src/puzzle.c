@@ -15,8 +15,8 @@
 #include "sha1/sha1.h"
 #include "puzzle.h"
 
-const Hash_t NULL_HASH = {};           // A special null-hash for the first Block in the chain
-const Nonce_t NULL_NONCE = {};         // A special null-nonce for a default or initializing a Nonce
+const Hash_t NULL_HASH = {};           // A special null-hash for the first Block in the chain , 000000000000000000000
+const Nonce_t NULL_NONCE = {};         // A special null-nonce for a default or initializing a Nonce, 0000
 
 /***********************
  * PUZZLE private implementation details

@@ -4,20 +4,23 @@
  *
  *  COMP220: Assignment 3
  *  Author:  Joseph Fall
+ *  Co-Author: Braeden Norman and Artur Shadnik
  *  Date:    Feb. 1, 2018
  */
  
 /*******************
  * PRIVATE TYPE DECLARATIONS
  ********************/
+
 typedef struct {
     Block_t* head;
     Block_t* tail;
 } BlockChain;
-
 /*********************
  *  PUBLIC INTERFACE
  *********************/
+ 
+ Block_t* createBlock();
  
 /*
  * Constructor - return a new, empty BlockChain 
@@ -44,7 +47,8 @@ int bcLen( const BlockChain chain );
 /*
  *  Return true iff blkIsValid(block) for every block in the chain
  */
-bool blkIsValid(const BlockChain chain);
+ 
+bool bcIsValid(const BlockChain chain);
 
 
 /*
